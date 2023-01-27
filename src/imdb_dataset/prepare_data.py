@@ -8,11 +8,9 @@ def vectorize_sequences(sequences, dimension = 10000):
 
     #creating an all zero array of shape (len(sequences), dimension)
     results = np.zeros((len(sequences), dimension))
-    
     #setting specific indices to 1s
     for i, sequence in enumerate(sequences):
         results[i, sequence] = 1
-
     return results
 
 #vectorizing both data sets
